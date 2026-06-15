@@ -84,9 +84,6 @@ Hook），结合 bytehook/shadowhook 做监控与问题定位</li>
 辅助转换（A2H）方案；熟悉映射知识库（RAG）、独立验证与同口径度量等大模型应用工程化手段</p>
 <hr />
 <h2 id="项目经历">项目经历</h2>
-<blockquote>
-<p>详细项目经历（STAR 描述）待补充，以下为概要：</p>
-</blockquote>
 <h3 id="懂车帝-harmonyos-版从-0-到-1-建设与追平主端">懂车帝 HarmonyOS
 版从 0 到 1 建设与追平主端</h3>
 <p><strong>背景（Situation）</strong>：懂车帝主端有 200w+ Java/Kotlin
@@ -151,17 +148,43 @@ IP）</strong>：将控件、API、生命周期、状态管理（MVVM
 还原度显著提升、返工大幅下降；沉淀可复用、可增值的
 <strong>Android→鸿蒙映射知识库</strong>与转换
 SOP，降低新人门槛，加速鸿蒙端追平主端。</p>
-<h3 id="android-问题定位与性能优化体系建设">Android
-问题定位与性能优化体系建设</h3>
-<p>围绕 Native
-Crash、ANR、OOM、启动慢、卡顿丢帧等高频问题，建设统一问题定位 SOP。通过
-Slardar 聚类发现线上问题，结合 Tombstone、ANR traces、Perfetto、Memory
-Profiler 等证据进行线下归因，沉淀团队排查手册与复盘模板。</p>
-<h3 id="鸿蒙客户端性能优化专项">鸿蒙客户端性能优化专项</h3>
-<p>以 DevEco Profiler 为统一口径治理冷启动、卡顿丢帧与内存问题。通过
-Launch 拆解启动阶段耗时并将启动任务按首屏必需/非必需分级；通过
-Frame/Trace
-定位复杂页面掉帧问题；形成每日性能优化日报与同口径复测机制。</p>
+<h3
+id="客户端性能与稳定性优化专项android-鸿蒙">客户端性能与稳定性优化专项（Android
+→ 鸿蒙）</h3>
+<p><strong>背景（Situation）</strong>：性能与稳定性优化贯穿我在懂车帝的不同阶段，且理论与方法论一脉相承，区别只在于平台与工具随阶段切换。早期在
+Android 主端（200w+ 代码、400+ 原生页面），围绕 Native
+Crash、ANR、OOM、启动慢、卡顿丢帧等高频问题打磨问题定位与优化方法；后期鸿蒙端从
+0 到 1
+追平主端，生态早期工具链不成熟、缺乏统一口径，需要把已验证的方法论迁移到新平台并系统化落地。</p>
+<p><strong>职责（Task）</strong>：</p>
+<ul>
+<li><strong>Android
+阶段</strong>：作为核心开发参与并负责过若干性能与稳定性 Topic（Native
+Crash / ANR / OOM / 卡顿定位等），沉淀通用排查方法与工具使用经验。</li>
+<li><strong>鸿蒙阶段</strong>：作为鸿蒙端性能与稳定性专项
+Owner，整体负责专项目标制定、口径统一、流程与机制建设，并对核心性能 /
+稳定性指标负责。</li>
+</ul>
+<p><strong>举措（Action）</strong>：</p>
+<ul>
+<li><strong>方法论一致、工具随平台切换</strong>：两阶段共用同一套「线上发现
+→ 线下归因 → 优化 → 同口径复测」闭环方法论。Android 侧依托
+<strong>Slardar</strong> 聚类发现线上问题，结合 <strong>Tombstone、ANR
+traces、Perfetto、Memory Profiler、btrace / Sliver</strong>
+等证据归因，沉淀排查手册与复盘模板。</li>
+<li><strong>鸿蒙专项体系化（Owner 主导）</strong>：以 <strong>DevEco
+Profiler</strong> 为统一口径治理冷启动、卡顿丢帧与内存；通过
+<strong>Launch</strong> 拆解启动阶段耗时并将启动任务按「首屏必需 /
+非必需」分级；通过 <strong>Frame / Trace</strong>
+定位复杂页面掉帧根因。</li>
+<li><strong>机制与度量</strong>：建立<strong>每日性能优化日报</strong>与<strong>同口径复测机制</strong>，保证优化前后可对比、问题可追踪、收益可量化，避免劣化反复。</li>
+<li><strong>跨平台经验迁移</strong>：将 Android 成熟的抓栈 / 监控 /
+归因思路迁移到鸿蒙（如高性能抓栈、混合栈 Trace 方案），降低新平台从 0
+建设成本。</li>
+</ul>
+<p><strong>结果（Result）</strong>：以一致方法论支撑 Android
+与鸿蒙双平台的性能与稳定性治理；在鸿蒙端作为专项 Owner
+建立起统一口径的问题定位与优化体系，性能优化日报与同口径复测机制常态化运行，核心高频问题实现「可发现、可归因、可复测」闭环，并沉淀为可复用团队资产。</p>
 <h3 id="多端工程实践与鸿蒙性能治理">多端工程实践与鸿蒙性能治理</h3>
 <p>在 鸿蒙 + KMP 双仓架构下，搭建多设备 UI 适配规范，设计「进入态保持 +
 中转退出」方案解决 KMP 车系页横竖屏切换状态丢失问题，沉淀横竖屏 / 状态栏
@@ -172,14 +195,14 @@ Frame/Trace
 高级开发工程师</h3>
 <p><strong>2021.04 — 至今</strong> · 北京</p>
 <ul>
-<li>主导 <strong>Android 问题定位与性能优化体系建设</strong>，覆盖
-Native Crash / ANR / OOM / 启动 /
-卡顿丢帧等核心稳定性与性能问题，建立标准化 SOP</li>
+<li>负责 <strong>客户端性能与稳定性优化专项（Android →
+鸿蒙）</strong>：Android 阶段参与 Native Crash / ANR / OOM / 卡顿等
+Topic 排查并沉淀方法论，鸿蒙阶段作为专项 Owner 以 DevEco Profiler
+统一口径治理冷启动 / 卡顿丢帧 /
+内存，形成每日性能优化日报与同口径复测机制</li>
 <li>推进 <strong>鸿蒙版从 0 到 1
 建设与追平主端</strong>：负责需求追赶节奏、跨团队（KMP/QA/UED/Server/华为）协作与人力协调，牵头小周会与周报机制，10
 个月实现汽车垂类首个上架 App、85%+ 还原度</li>
-<li>主导 <strong>鸿蒙客户端性能治理</strong>，以 DevEco Profiler
-为统一口径治理冷启动、卡顿丢帧与内存问题，形成每日性能优化日报机制</li>
 <li>负责多设备适配（折叠屏 / 三折叠 / PAD），双折叠屏体验评分
 4.79、三折叠屏 4.54，领先竞品</li>
 <li>主导 HarmonyOS API17 → API20
