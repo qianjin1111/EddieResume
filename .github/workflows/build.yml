@@ -21,8 +21,13 @@ jobs:
           sudo apt-get update
           # fonts-noto-cjk: 中文字体（关键！否则 PDF 中所有中文会丢失/变成空白方块）
           # fonts-noto-color-emoji: 兼容简历中的 📧 🌐 等 emoji 图标
-          sudo apt-get install -y pandoc wkhtmltopdf fonts-noto-cjk fonts-noto-color-emoji
-          # 刷新字体缓存，确保 wkhtmltopdf(QtWebKit) 能检索到新安装的字体
+          # WeasyPrint 运行所需系统库（pango/cairo/gdk-pixbuf）
+          sudo apt-get install -y pandoc fonts-noto-cjk fonts-noto-color-emoji \
+            libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 \
+            libgdk-pixbuf-2.0-0 libffi-dev libcairo2
+          # 用 WeasyPrint 替代已停止维护的 wkhtmltopdf，分页更干净、不会出现大片留白
+          pip install --upgrade weasyprint
+          # 刷新字体缓存，确保排版引擎能检索到新安装的字体
           sudo fc-cache -f -v
 
       - name: Build HTML
@@ -38,7 +43,7 @@ jobs:
       - name: Build PDF
         run: |
           pandoc resume.md \
-            --pdf-engine=wkhtmltopdf \
+            --pdf-engine=weasyprint \
             --css=style.css \
             --metadata title="钱进 - Resume" \
             --from markdown+smart \
