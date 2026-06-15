@@ -1,5 +1,5 @@
 ---
-title: "Android 高级客户端开发工程师"
+title: "客户端开发工程师"
 author: "钱进"
 date: "2026-06-15"
 geometry: "margin=1in"
@@ -13,9 +13,9 @@ urlcolor: blue
 
 # 钱进
 
-**Android 高级客户端开发** · 10 年经验 · 现居北京
+**客户端开发工程师** · 10 年经验 · 现居北京
 
-📧 qianjin1111@gmail.com · 🌐 [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
+📧 qianjinchaoyue1111@163.com · 🌐 [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
 
 ---
 
@@ -24,16 +24,16 @@ urlcolor: blue
 10 年移动客户端研发经验，长期聚焦 **Android 原生 + HarmonyOS + 跨端（KMP/Compose）**，能独立完成从需求梳理、方案设计、核心编码、联调到发布及线上质量治理的闭环。
 
 - 2021.04 起就职于 **懂车帝**（至今在职）
-- 既做过大跨度系统版本升级、多设备适配，也主导过冷启动 / 卡顿 / 内存 / 包体积等性能专项
+- 既做过大跨度系统版本升级、多设备适配与业务需求迭代，也主导过冷启动 / 卡顿 / 内存 / 包体积等性能专项
 - 擅长用 Profiler / 抓栈 / Hook 等手段定位疑难问题并形成可复用方法论
-- 在字节内部持续沉淀鸿蒙工程基础能力、一多与体验提升、性能优化日报等实践文档
+- 持续沉淀鸿蒙工程基础能力、一多与体验提升、性能优化、工程体验流程等实践文档
 
 ---
 
 ## 专业技能
 
 ### 平台与语言
-精通 **Java / Kotlin**，熟悉 C/C++（JNI/NDK）、ArkTS；具备 Kotlin Multiplatform / Compose 跨端实战经验
+精通 **Java / Kotlin**，熟悉 ArkTS；具备 Kotlin Multiplatform / Compose 跨端实战经验
 
 ### Android 客户端与架构
 熟悉 Activity/Fragment、View 体系与复杂列表构建，掌握 **MVVM、组件化/模块化分层**，具备折叠屏 / PAD / 横竖屏等多形态 UI 适配经验
@@ -44,7 +44,7 @@ urlcolor: blue
 ### 数据存储与本地能力
 熟悉 SharedPreferences / 文件 / SQLite 等本地存储，掌握 Keva、AutoDatabase 等 K-V / ORM 方案
 
-### 性能与稳定性（核心优势）
+### 性能与稳定性
 - Android/HarmonyOS 冷启动、ANR/卡顿/掉帧、内存/OOM、包体积与功耗优化
 - 熟悉 Native Crash 分析（信号/寄存器/Tombstone/backtrace）、ANR 归因、Java/Native OOM 分类与治理
 - 理解 **Hook 技术**（PLT/GOT hook、Inline hook、Java/ART Hook），结合 bytehook/shadowhook 做监控与问题定位
