@@ -19,14 +19,14 @@ resume.md ──(GitHub Actions)──→ index.html ──→ GitHub Pages
 
 ```bash
 # 安装依赖
-brew install pandoc wkhtmltopdf  # macOS
-# 或 sudo apt-get install pandoc wkhtmltopdf  # Linux
+brew install pandoc weasyprint  # macOS
+# 或 sudo apt-get install pandoc weasyprint  # Linux（或 pip install weasyprint）
 
 # 生成 HTML
 pandoc resume.md --standalone --css=style.css -o index.html
 
-# 生成 PDF
-pandoc resume.md --pdf-engine=wkhtmltopdf --css=style.css -o resume.pdf
+# 生成 PDF（使用 WeasyPrint，分页更干净、不会出现大片留白）
+pandoc resume.md --pdf-engine=weasyprint --css=style.css -o resume.pdf
 ```
 
 ## 目录
