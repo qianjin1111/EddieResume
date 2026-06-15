@@ -66,4 +66,5 @@ jobs:
 
             由 GitHub Actions 自动构建，每次 push 到 main 分支时更新。
           prerelease: false
+          make_latest: true
         continue-on-error: true

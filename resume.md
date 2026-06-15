@@ -15,7 +15,7 @@ urlcolor: blue
 
 **Android 高级客户端开发** · 10 年经验 · 现居北京
 
-📧 qianjin1111@gmail.com · 🌐 [github.com/qianjin1111](https://github.com/qianjin1111)
+📧 qianjin1111@gmail.com · 🌐 [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
 
 ---
 
@@ -100,4 +100,4 @@ urlcolor: blue
 
 ---
 
-> 📄 下载 PDF 版本：[resume.pdf](https://github.com/qianjin1111/qianjin1111/releases/latest/download/resume.pdf)
+> 📄 下载 PDF 版本：[resume.pdf](https://github.com/qianjin1111/EddieResume/releases/latest/download/resume.pdf)
