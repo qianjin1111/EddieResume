@@ -19,14 +19,18 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc wkhtmltopdf
+          # fonts-noto-cjk: 中文字体（关键！否则 PDF 中所有中文会丢失/变成空白方块）
+          # fonts-noto-color-emoji: 兼容简历中的 📧 🌐 等 emoji 图标
+          sudo apt-get install -y pandoc wkhtmltopdf fonts-noto-cjk fonts-noto-color-emoji
+          # 刷新字体缓存，确保 wkhtmltopdf(QtWebKit) 能检索到新安装的字体
+          sudo fc-cache -f -v
 
       - name: Build HTML
         run: |
           pandoc resume.md \
             --standalone \
             --css=style.css \
-            --metadata title="钱弋海 - Resume" \
+            --metadata title="钱进 - Resume" \
             --from markdown+smart \
             --to html5 \
             -o index.html
@@ -36,7 +40,7 @@ jobs:
           pandoc resume.md \
             --pdf-engine=wkhtmltopdf \
             --css=style.css \
-            --metadata title="钱弋海 - Resume" \
+            --metadata title="钱进 - Resume" \
             --from markdown+smart \
             -o resume.pdf
 

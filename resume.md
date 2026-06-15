@@ -1,6 +1,6 @@
 ---
 title: "Android 高级客户端开发工程师"
-author: "钱弋海"
+author: "钱进"
 date: "2026-06-15"
 geometry: "margin=1in"
 fontsize: "11pt"
@@ -11,7 +11,7 @@ linkcolor: blue
 urlcolor: blue
 ---
 
-# 钱弋海
+# 钱进
 
 **Android 高级客户端开发** · 10 年经验 · 现居北京
 
