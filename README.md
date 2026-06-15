@@ -4,6 +4,8 @@
 
 在线预览 → [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
 
+下载 PDF → [📄 resume.pdf（最新版）](https://github.com/qianjin1111/EddieResume/releases/latest/download/resume.pdf)
+
 ---
 
 ## 工作流

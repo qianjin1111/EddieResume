@@ -152,7 +152,3 @@ urlcolor: blue
 ## 教育背景
 
 **延边大学** · 计算机科学与技术 · 全日制本科 · 2011 — 2015
-
----
-
-> 📄 下载 PDF 版本：[resume.pdf](https://github.com/qianjin1111/EddieResume/releases/latest/download/resume.pdf)
