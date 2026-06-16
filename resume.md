@@ -15,7 +15,7 @@ urlcolor: blue
 
 **Android / HarmonyOS 高级客户端开发工程师** · 10 年移动客户端经验 · 北京
 
-📧 qianjinchaoyue1111@163.com · 🌐 [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
+📧 qianjinchaoyue1111@163.com · 📱 15210392639 · 🌐 [qianjin1111.github.io/EddieResume](https://qianjin1111.github.io/EddieResume)
 
 ---
 
